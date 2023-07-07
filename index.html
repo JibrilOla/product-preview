@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product card</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap" rel="stylesheet">
+</head>
+<style>
+  /* BODY BACKGROUND DISPLAY */
+  body {
+    background: hsl(30, 38%, 92%);
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  /* PREVIEW CARD */
+  .content {
+    height: 500px;
+    width: 800px;
+    display: flex;
+  }
+
+  /* IMG  LEFT*/
+  .img {
+    background: url("images/image-product-desktop.jpg") no-repeat center center/cover;
+    height: 100%;
+    width: 50%;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+  }
+
+  /* TXT RIGHT  */
+  .txt {
+    background: white;
+    height: 100%;
+    width: 50%;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #one {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 13%;
+    font-size: 100%;
+    position: relative;
+    top: 5%;
+    color: hsl(228, 12%, 48%);
+  }
+
+  #two {
+    font-family: 'Fraunces', serif;
+    font-size: 250%;
+    margin-left: 13%;
+    margin-right: 15%;
+    position: relative;
+    bottom: 5%;
+
+  }
+
+  #three {
+    margin-left: 13%;
+    margin-right: 19%;
+    font-family: sans-serif;
+    font-size: 120%;
+    position: relative;
+    bottom: 10%;
+    color: hsl(228, 12%, 48%);
+  }
+
+  #price {
+    display: flex;
+    margin-left: 13%;
+    margin-right: 35%;
+    justify-content: space-between;
+    height: 7%;
+  }
+
+  #p {
+    color: hsl(158, 36%, 37%);
+    font-size: 250%;
+    position: relative;
+    bottom: 250%;
+    font-family: 'Fraunces', serif;
+  }
+
+  #dc {
+    color: hsl(228, 12%, 48%);
+    font-family: sans-serif;
+    text-decoration: line-through;
+    position: relative;
+    bottom: 140%;
+    font-size: 100%;
+  }
+
+  /* BUTTON */
+  .button {
+    width: 80%;
+    height: 10%;
+    border-radius: 5%;
+    background: hsl(158, 36%, 37%);
+    margin-left: 10%;
+    margin-right: 10%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    bottom: 4%;
+  }
+
+  #cart {
+    margin-left: 29%;
+  }
+
+  #add {
+    margin-right: 29%;
+    font-size: 130%;
+    color: white;
+    font-family: sans-serif;
+  }
+
+
+
+  /* MOBILE */
+  @media (max-width:450px) {
+
+    .content {
+      height: 600px;
+      width: 600px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    body {
+      background: hsl(0, 48%, 87%);
+      height: 700px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .txt {
+      border-top-right-radius: 0%;
+      border-bottom-left-radius: 5%;
+    }
+
+    .img {
+      border-top-right-radius: 5%;
+      border-bottom-left-radius: 0%;
+    }
+
+    #one {
+      margin-left: 10%;
+      font-size: 80%;
+      position: relative;
+      top: 3%;
+    }
+
+    #two {
+      font-size: 150%;
+      margin-left: 10%;
+      margin-right: 10%;
+      position: relative;
+
+
+    }
+
+    #three {
+      margin-left: 10%;
+      margin-right: 10%;
+      font-size: 83%;
+      position: relative;
+
+
+    }
+
+    #price {
+      height: 8%;
+      margin-left: 10%;
+      margin-right: 35%;
+    }
+
+    #p {
+      font-size: 210%;
+    }
+
+    #dc {
+      bottom: 150%;
+      font-size: 85%;
+    }
+
+    #cart {
+      margin-left: 26%;
+    }
+
+    #add {
+      margin-right: 26%;
+      font-size: 110%;
+      color: white;
+      font-family: sans-serif;
+
+    }
+
+    .button {
+      position: relative;
+      top: 5%;
+      margin-left: 7%;
+      margin-right: 7%;
+    }
+
+  }
+
+  @media (min-width:451px) and (max-width:900px) {
+
+    .content {
+      height: 500px;
+      width: 600px;
+      display: flex;
+    }
+
+    body {
+      height: 900px;
+    }
+
+    #one {
+      margin-left: 7%;
+      font-size: 100%;
+    }
+
+    #two {
+      font-size: 300%;
+      margin-left: 7%;
+      margin-right: 7%;
+      position: relative;
+    }
+
+    #three {
+      margin-left: 7%;
+      margin-right: 7%;
+      font-size: 120%;
+      position: relative;
+      bottom: 15%;
+
+    }
+
+    #price {
+      height: 9.5%;
+      margin-left: 7%;
+    }
+
+    #p {
+      font-size: 210%;
+    }
+
+    #dc {
+      bottom: 200%;
+      font-size: 95%;
+    }
+
+    #cart {
+      margin-left: 27%;
+    }
+
+    #add {
+      margin-right: 27%;
+      font-size: 100%;
+      font-family: sans-serif;
+      padding: 3%;
+    }
+
+    .button {
+      position: relative;
+      bottom: 15%;
+    }
+  }
+</style>
+
+<body>
+  <div class="content">
+    <div class="img"></div>
+    <div class="txt">
+      <p id="one">P E R F U M E</p>
+      <p id="two"><b>Gabrielle Essence Eau <br> De Parfum</b></p>
+      <p id="three">A floral, solar and voluptuous interpretation composed by Oliver Polge, Perfumer-Creator for the
+        House of CHANEL.</p>
+      <div id="price">
+        <p id="p">$149.99</p>
+        <p id="dc">$169.99</p>
+      </div>
+      <div class="button">
+        <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg" id="cart">
+          <path
+            d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z"
+            fill="#FFF" />
+        </svg>
+        <f id="add">Add to Cart</f>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
